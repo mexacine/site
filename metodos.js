@@ -15,7 +15,7 @@ function mostrarDetalle(card) {
 
     // 2. Guardar URLs globales
     // Nota: Se usa la URL del 'data-movie-url' tal cual para abrir la pestaña
-    currentTrailerUrl = card.getAttribute('data-trailer-url') + '?mute=0&controls=0';
+    currentTrailerUrl = card.getAttribute('data-trailer-url') + '?mute=0&controls=1';
     currentMovieUrl = card.getAttribute('data-movie-url');
 
     // 3. Cargar información estática y el tráiler
@@ -134,6 +134,7 @@ document.getElementById('movie-modal').addEventListener('click', function (e) {
         cerrarDetalle();
     }
 })
+
 
 
 ;
